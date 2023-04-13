@@ -30,7 +30,7 @@ const botName = "ChatCord Bot";
   io.adapter(createAdapter(pubClient, subClient));
 })();
 
-// Run when client connects
+// Run when client connects  
 io.on("connection", (socket) => {
   console.log(io.of("/").adapter);
   socket.on("joinRoom", ({ username, room }) => {
